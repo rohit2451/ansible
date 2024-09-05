@@ -3,5 +3,5 @@
  hosts: web
  tasks:
  -name: PLAY-01 TASK-01
-   ansible.builtin.debug:
+  ansible.builtin.debug:
     msg: this is rohit from PLAY-01 and TASK-01
