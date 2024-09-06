@@ -1,5 +1,5 @@
 - name: variables to print
-  host: web
+  hosts: web
   vars:
     COURSE: Devops
     DURATION: 130hrs
