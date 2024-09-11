@@ -1,4 +1,4 @@
-- name: variables to orint
+- name: variables to print
   hosts: web
   tasks:
     - name: print the information
