@@ -22,4 +22,4 @@
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg: "Hi, i'm learning {{COURSE}}, Duration is: {{DURATION}}, Trainer is: {{TRAINER}}"
+       msg: "Hi, I am learning {{ course }}, with duration: {{ duration }}, topics are: {{ topics }}, and live: {{ live }}, tools are: {{ tools }
