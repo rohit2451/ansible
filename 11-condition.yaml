@@ -1,0 +1,17 @@
+- name: print the number is less than 50 or not
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: number
+    prompt: please enter the number
+    private: false
+  tasks:
+  - name: print this if less than 50
+    ansible.builtin.debug:
+      msg: "Given number {{number}} is less than 50"
+  when: number | int < 50
+
+   name: print this if greater than or equal to 50
+    ansible.builtin.debug:
+      msg: "Given number {{number}} is greater than or equal than 50"
+  when: number | int >= 50 
