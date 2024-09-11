@@ -1,0 +1,6 @@
+- name: variables to orint
+  hosts: web
+  tasks:
+    - name: print the information
+      ansible.builtin.debug:
+        msg: "Hi, i'm learning {{COURSE}}, Duration is: {{DURATION}}, Trainer is: {{TRAINER}}"
