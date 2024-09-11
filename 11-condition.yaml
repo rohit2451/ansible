@@ -13,5 +13,5 @@
 
   - name: print this if greater than or equal to 50
     ansible.builtin.debug:
-      msg: "Given number {{ my_number }} is greater than or equal than 50"
+      msg: "Given number {{ my_number }} is greater than or equal to 50"
   when: my_number | int >= 50
